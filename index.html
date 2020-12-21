@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <link href="portfolioStylesheet.css" rel="stylesheet" type="text/css">
     <head>
-        <title></title>
+        <title>Alex Elijah Zuniga's UX Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="navigation">
+        <header class="header">
             <div class="inline-block logo">
-                <img src="noun_A-to-Z_72773.png" alt="logo_image_placeholder">
+                <img src="img/noun_A-to-Z_72773.png" alt="logo_image_placeholder">
             </div>
-                <ul>
-                    <li class="inline-block"><a href="">ABOUT</a></li>
-                    <li class="inline-block"><a href="skills.html">SKILLS</a></li>
-                    <li class="inline-block"><a href="work.html">WORK</a></li>
-                    <li class="inline-block"><a href="">CONTACT</a></li>
-                </ul>
+            <ul class="navBar">
+                <li class="nav_links"><a href="#about">ABOUT</a></li>
+                <li class="nav_links"><a href="#skills">SKILLS</a></li>
+                <li class="nav_links"><a href="#work">WORK</a></li>
+                <li class="nav_links"><a href="#contact">CONTACT</a></li>
+            </ul>
         </header>
-        <section class="heroimg">
+        <section class="heroimg" id="hero">
             <div class="content">
                 <h1>Welcome to my UX Portfolio</h1>
                 <img src="IMG_0167.JPG" alt="hero_image_placeholder">
@@ -26,7 +28,72 @@
                 </button>
             </div>
         </section>
-        <footer>
+        <section class="about" id="about">
+
+        </section>
+        <!-- My Work Section Constructed using CSS Grid -->
+        <section class="work" id="work">
+            <h1>My Work</h1>
+            <div class="workGrid">
+                <div class="finalProject projects">
+                    <div>
+                        <img src="Screen Shot 2020-12-18 at 3.15.40 PM.png" alt="place_holder">
+                    </div>
+                    <div>
+                        <h4>Final Project</h4>
+                        <p>TBA</p>
+                        <button>View full project</button>
+                    </div>
+                </div>
+                <div class="npoProject projects">
+                    <div>
+                        <img src="Screen Shot 2020-12-18 at 3.17.15 PM.png" alt="place_holder">
+                    </div>
+                    <div>
+                        <h4>NPO Redesign</h4>
+                        <p>Redesigned The Marine Mammal Center NPO website in order to properly follow responsive web design protocol. Conducted a full research and interaction design plan with multiple interviews and usability tests to ultimately create a final hi fi mock up and full UI style guide, which was shared with The Marine Mammal Center and is currently under review for revision.</p>
+                        <button>View full project</button>
+                    </div>
+                </div>
+                <div class="govProject projects">
+                    <div>
+                        <img src="Screen Shot 2020-12-18 at 3.18.31 PM.png" alt="place_holder">
+                    </div>
+                    <div>
+                        <h4>Government Redesign</h4>
+                        <p>Redesigned the National Park Services government website in order to improve usability, update UI patterns, and accommodate for the limiting factors that parks offered during the COVID-19 pandemic. Consisted of a full research plan and was focused on UI navigation updates and the final user flow of the website.</p>
+                        <button>View full project</button>
+                    </div>
+                </div>
+            </div>
+            <h3>View all projects</h3>
+        </section>
+        <!--  My UX Skills section coded using CSS flex -->
+        <section class="skills" id="skills">
+            <h1>My UX Skills</h1>
+            <div class="flexContainer">
+                <div>
+                    <img src="luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="userResearch_icon">
+                    <h3>User Research</h3>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="tirza-van-dijk-o1SKqmgSDbg-unsplash.jpg" alt="UIdesign_icon">
+                    <h3>User Interface Design</h3>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg" alt="webDev_icon">
+                    <h3>Web Development</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            
+        </section>
+        <footer class="footer">
+            <h2><i class="fab fa-linkedin-in"></i></h2>
             <ul>
                 <li class="inline-block">ABOUT</li>
                 <li class="inline-block">SKILLS</li>

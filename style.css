@@ -1,8 +1,16 @@
+* {
+    /* margin: 0%; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    /* border: 1px solid red; */
+}
 /* UX_UI_HW_17 */
 body {
     background: #1f1f1f;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
-.inline-block {
+.nav_links {
     display: inline-block;
     vertical-align: top;
 }
@@ -14,24 +22,39 @@ body {
     width: 100%;
     /* color: white; */
 }
-.navigation {
+.header {
     width: 100%;
     padding: 1%;
     background-color:#1f1f1f;
+    /* background-color: white; */
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }
-.navigation li {
+.navBar li {
     padding: 10px;
 }
-ul {
+.navBar {
     color: white;
-    width: 50%;
-    margin-left: auto;
-    display: inline-block; 
-    vertical-align: top;
+    /* width: 50%; */
+    /* margin-left: auto; */
+    /* display: inline-block;  */
+    /* vertical-align: top; */
+}
+.navBar a {
+    color: white;
+    text-decoration: none;
+    /* font-family: ; */
+    /* font-size: ; */
 }
 .heroimg {
     padding: 25px;
+    margin-top: 50px;
 }
 .content {
     color: white;
@@ -46,6 +69,10 @@ footer {
 }
 footer li {
     padding: 10px;
+}
+.footer i {
+    color: white;
+    font-size: 100px;
 }
 
 
@@ -78,12 +105,13 @@ footer li {
 }
 .workGrid {
     display: grid;
-    grid-template-rows: 300px 300px 300px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "proj1 proj2 proj3";
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 900px){
     .flexContainer {
         display: column;
         width: 100%; /* ??????? */
@@ -92,8 +120,7 @@ footer li {
         /* From Unit 18 HW Instructions */
         margin: 0px 5%;
         display: grid;
-        grid-template-rows: 300px 300px 300px 300px 300px;
         grid-template-columns: 1fr;
-        grid-template-areas: "proj1 proj2 proj3";
+        grid-template-areas: "proj1" "proj2" "proj3";
     }
 }
